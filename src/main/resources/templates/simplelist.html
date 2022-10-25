@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<link rel="shortcut icon" type="image/x-icon" th:href="@{/favicon.ico}">
+<link th:href="@{/node_modules/bootstrap/dist/css/bootstrap.min.css}" rel="stylesheet">
+<link th:href="@{/css/main.css}" rel="stylesheet" />
+
+<title>pp311 simple list</title>
+</head>
+<body>
+  <nav class="navbar navbar-dark bg-mynav">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Задание 3.1.1</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="d-flex bd-highlight mb-3">
+      <div class="me-auto p-2 bd-highlight">
+        <h2>Пользователи (из user) - весь список
+      </div>
+      <div class="p-2 bd-highlight">
+        <button type="button" class="btn btn-secondary" onclick="return false; showUserCreateBox()">Новый пользователь (user)</button>
+      </div>
+    </div>
+
+    <div class="table-responsive">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Имя</th>
+            <th scope="col">Фамилия</th>
+            <th scope="col">email</th>
+            <th scope="col">Действия</th>
+          </tr>
+        </thead>
+        <tbody id="mytable">
+          <tr>
+            <th scope="row" colspan="5">Здесь будут пользователи...</th>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+  <script th:src="@{/css/main.js}" crossorigin="anonymous"></script>
+  <script th:src="@{/node_modules/sweetalert2/dist/sweetalert2.min.js}" crossorigin="anonymous"></script>
+  <script th:src="@{/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js}"
+    crossorigin="anonymous"></script>
+</body>
+</html>

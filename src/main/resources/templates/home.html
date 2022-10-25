@@ -1,7 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8">
+<link rel="shortcut icon" type="image/x-icon" th:href="@{/favicon.ico}">
+<link th:href="@{/node_modules/bootstrap/dist/css/bootstrap.min.css}" rel="stylesheet">
+<link th:href="@{/css/main.css}" rel="stylesheet" />
+
 <title>pp311 mvc to boot</title>
 </head>
 <body>
@@ -11,10 +15,20 @@
 <p>
 CRUD приложение на SpringBoot
 </p>
+<p>
+<a th:href="@{list/users}" target="_blank">Демонстрация работы с пользователями</a> 
+</p>
+<p>
+<a th:href="@{simple/list}" target="_blank">Список пользователей из БД.</a> 
+</p>
 </div>
 <div>
 
 </div>
 
+  <script th:src="@{/css/main.js}" crossorigin="anonymous"></script>
+  <script th:src="@{/node_modules/sweetalert2/dist/sweetalert2.min.js}" crossorigin="anonymous"></script>
+  <script th:src="@{/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js}"
+    crossorigin="anonymous"></script>
 </body>
 </html>
