@@ -34,3 +34,4 @@ build/
 
 deploy.sh
 pp311.zip 
+dbinit.sh
